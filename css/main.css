@@ -35,6 +35,12 @@ a:hover {
   color: inherit;
 }
 
+ul,
+ol,
+li {
+  list-style: none;
+}
+
 body {
   position: relative;
   font-family: 'Times New Roman', Times, serif, '微軟正黑體';
@@ -204,6 +210,12 @@ aside li {
   margin-bottom: 1.5rem;
 }
 
+aside li.active a::after {
+  width: 94%;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
 aside li a {
   background: #7AC2C3;
   color: white;
@@ -363,12 +375,83 @@ h2.tit {
 h2.tit::after {
   content: "";
   position: absolute;
-  z-index: -1;
-  top: -.5rem;
-  left: -.5rem;
+  z-index: 0;
+  top: -.25rem;
+  left: -.25rem;
   background: url(../images/tit-bg.svg) top center;
+  width: calc(100% + .5rem);
+  height: calc(100% + .5rem);
+}
+
+h2.tit span {
+  display: block;
+  padding: .5rem;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+
+.sub-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.sub-list li {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.sub-list li::after {
+  content: "";
+  position: absolute;
+  top: .75rem;
+  right: -.5rem;
+  width: 1px;
+  height: 1.25rem;
+  background-color: #1E1E44;
+}
+
+.sub-list li:last-child::after {
+  content: none;
+}
+
+.sub-list li a {
+  display: block;
+  color: #1E1E44;
+  position: relative;
+}
+
+.sub-list li a::after {
+  content: "";
+  position: absolute;
+  background-color: #fcd88c7d;
+  width: 0;
+  height: 10px;
+  top: 50%;
+  left: -.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.sub-list li a:hover::after, .sub-list li a.active::after {
   width: calc(100% + 1rem);
-  height: calc(100% + 1rem);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none;
 }
 
 .intro-row h2 {
@@ -627,5 +710,94 @@ h2.tit::after {
 
 .pro-bg .main {
   padding: 8% 0;
+}
+
+.pro-slide .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+}
+
+.pro-slide .swiper-slide::before {
+  content: "";
+  background-color: #7AC2C3;
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: height .5s, opacity .5s;
+  transition: height .5s, opacity .5s;
+}
+
+.pro-slide .swiper-slide::after {
+  content: "";
+  background-color: #7AC2C3;
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: height .5s, opacity .5s;
+  transition: height .5s, opacity .5s;
+}
+
+.pro-slide .swiper-slide .pro-cover {
+  font-size: 1.25rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.pro-slide .swiper-slide .pro-cover span {
+  position: relative;
+}
+
+.pro-slide .swiper-slide .pro-cover span::before, .pro-slide .swiper-slide .pro-cover span::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #1E1E44;
+  top: -.5rem;
+  left: calc(50% - 10px);
+  position: absolute;
+}
+
+.pro-slide .swiper-slide .pro-cover span::after {
+  top: unset;
+  bottom: -.5rem;
+}
+
+.pro-slide .swiper-slide:hover::before, .pro-slide .swiper-slide:hover::after {
+  height: 50%;
+  opacity: .9;
+  -webkit-transition: height .5s, opacity .5s;
+  transition: height .5s, opacity .5s;
+}
+
+.pro-slide .swiper-slide:hover .pro-cover {
+  opacity: 1;
+  -webkit-transition: opacity .5s .5s;
+  transition: opacity .5s .5s;
 }
 /*# sourceMappingURL=main.css.map */
