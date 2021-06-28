@@ -362,14 +362,24 @@ footer .sns a:hover i {
   background-size: contain;
 }
 
+.page-bg {
+  background: url(../images/block-bg.svg);
+}
+
+.pro-bg .main,
+.page-bg .main {
+  padding: 8% 0;
+}
+
 h2.tit {
   position: relative;
   background: white;
-  padding: .5rem;
+  padding: .5rem 1rem;
   min-width: 150px;
   display: inline-block;
   text-align: center;
   line-height: 1;
+  margin-bottom: 2rem;
 }
 
 h2.tit::after {
@@ -399,7 +409,7 @@ h2.tit span {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin: 2rem 0;
+  margin: 0 0 2rem;
 }
 
 .sub-list li {
@@ -469,6 +479,14 @@ h2.tit span {
   height: auto;
 }
 
+.flower2 {
+  position: fixed;
+  left: -2%;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
 /*--第一屏--*/
 #top {
   position: relative;
@@ -481,13 +499,6 @@ h2.tit span {
   top: -1%;
   width: 20%;
   z-index: 2;
-  pointer-events: none;
-}
-
-#top .flower2 {
-  position: absolute;
-  left: -2%;
-  bottom: 0;
   pointer-events: none;
 }
 
@@ -708,10 +719,6 @@ h2.tit span {
           transform-origin: left bottom;
 }
 
-.pro-bg .main {
-  padding: 8% 0;
-}
-
 .pro-slide .swiper-slide {
   position: relative;
   overflow: hidden;
@@ -799,5 +806,55 @@ h2.tit span {
   opacity: 1;
   -webkit-transition: opacity .5s .5s;
   transition: opacity .5s .5s;
+}
+
+.news-item {
+  position: relative;
+  width: 90%;
+  color: #1E1E44;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.news-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/tit-bg.svg) top left;
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  z-index: 1;
+}
+
+.news-item > div {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  background: white;
+}
+
+.news-item .pic {
+  position: relative;
+}
+
+.news-item .pic::before {
+  content: "";
+  width: 15px;
+  height: 4px;
+  background: #7AC2C3;
+  border-radius: 5px;
+  top: -2px;
+  left: 0;
+}
+
+.news-item .pic::after {
+  content: "";
+}
+
+.news-item .date {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-style: italic;
 }
 /*# sourceMappingURL=main.css.map */
