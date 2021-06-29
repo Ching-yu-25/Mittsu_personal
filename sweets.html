@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -42,42 +43,98 @@
           <span>甜品</span></h2>
       </div>
       <ul class="sub-list">
-        <li><a href="#">杯子蛋糕系列</a></li>
-        <li><a href="#" class="active">切片蛋糕</a></li>
+        <li><a href="#" class="active">杯子蛋糕系列</a></li>
+        <li><a href="#">切片蛋糕</a></li>
         <li><a href="#">甜塔</a></li>
       </ul>
-      <div class="produst-row">
+      <div class="produst-row" data-aos="fade-left">
         <div class="swiper-container pro-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(images/sweets-6.png);">
+              <div class="pro-cover">
+                <span class="pro-name">水果巧克力</span>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(images/sweets-7.png);">
+              <div class="pro-cover">
+                <span class="pro-name">杏仁拿鐵</span>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(images/sweets-8.png);">
+              <div class="pro-cover">
+                <span class="pro-name">莓果奶香</span>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(images/sweets-9.png);">
+              <div class="pro-cover">
+                <span class="pro-name">遇上馬卡龍</span>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(images/sweets-10.png);">
+              <div class="pro-cover">
+                <span class="pro-name">聖誕限定</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"><img src="images/arrow-l.svg" alt=""></div>
+          <div class="swiper-button-next"><img src="images/arrow-r.svg" alt=""></div>
+        </div>
+
+        <div class="swiper-container pro-slide d-none">
           <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url(images/sweets-1.png);">
               <div class="pro-cover">
-                <span class="pro-name">檸檬伴蛋糕</span>
+                <span class="pro-name">莓事吧</span>
               </div>
-              <!-- <img src="images/sweets-1.png" class="img-fluid" alt=""> -->
             </div>
             <div class="swiper-slide" style="background-image: url(images/sweets-2.png);">
               <div class="pro-cover">
                 <span class="pro-name">檸檬伴蛋糕</span>
               </div>
-              <!-- <img src="images/sweets-2.png" class="img-fluid" alt=""> -->
             </div>
             <div class="swiper-slide" style="background-image: url(images/sweets-3.png);">
               <div class="pro-cover">
-                <span class="pro-name">檸檬伴蛋糕</span>
+                <span class="pro-name">摩多布朗尼</span>
               </div>
-              <!-- <img src="images/sweets-3.png" class="img-fluid" alt=""> -->
             </div>
             <div class="swiper-slide" style="background-image: url(images/sweets-4.png);">
               <div class="pro-cover">
-                <span class="pro-name">檸檬伴蛋糕</span>
+                <span class="pro-name">眠眠雪莓</span>
               </div>
-              <!-- <img src="images/sweets-4.png" class="img-fluid" alt=""> -->
             </div>
             <div class="swiper-slide" style="background-image: url(images/sweets-5.png);">
               <div class="pro-cover">
+                <span class="pro-name">格格千層</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"><img src="images/arrow-l.svg" alt=""></div>
+          <div class="swiper-button-next"><img src="images/arrow-r.svg" alt=""></div>
+        </div>
+
+        <div class="swiper-container pro-slide d-none">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(images/sweets-11.png);">
+              <div class="pro-cover">
                 <span class="pro-name">檸檬伴蛋糕</span>
               </div>
-              <!-- <img src="images/sweets-5.png" class="img-fluid" alt=""> -->
+            </div>
+            <div class="swiper-slide" style="background-image: url(images/sweets-12.png);">
+              <div class="pro-cover">
+                <span class="pro-name">檸檬伴蛋糕</span>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(images/sweets-13.png);">
+              <div class="pro-cover">
+                <span class="pro-name">檸檬伴蛋糕</span>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(images/sweets-14.png);">
+              <div class="pro-cover">
+                <span class="pro-name">檸檬伴蛋糕</span>
+              </div>
             </div>
           </div>
 
@@ -113,19 +170,8 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/custom.js"> </script>
-  <script>
-    $(function () {
-      var swiper = new Swiper(".pro-slide", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    })
-  </script>
 
 </body>
 

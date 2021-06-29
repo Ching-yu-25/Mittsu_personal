@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="86" viewBox="0 0 86 86">
+  <defs>
+    <clipPath id="clip-address-line">
+      <rect width="86" height="86"/>
+    </clipPath>
+  </defs>
+  <g id="address-line" clip-path="url(#clip-address-line)">
+    <g id="Group_35" data-name="Group 35" transform="translate(-568 -1509.038)">
+      <path id="envelope-regular" d="M34.429,64H3.562A3.562,3.562,0,0,0,0,67.562v21.37a3.562,3.562,0,0,0,3.562,3.562H34.429a3.562,3.562,0,0,0,3.562-3.562V67.562A3.562,3.562,0,0,0,34.429,64Zm0,3.562v3.028c-1.664,1.355-4.316,3.462-9.986,7.9-1.25.983-3.725,3.344-5.447,3.317-1.722.028-4.2-2.334-5.447-3.317-5.669-4.439-8.322-6.547-9.986-7.9V67.562ZM3.562,88.931V75.16c1.7,1.354,4.111,3.255,7.786,6.132C12.97,82.569,15.81,85.387,19,85.37c3.17.017,5.974-2.76,7.647-4.077,3.675-2.878,6.087-4.779,7.787-6.133V88.931Z" transform="translate(592.005 1473.753)" fill="#1e1e44"/>
+      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(568 1509)" fill="none" stroke="#1e1e44" stroke-width="5">
+        <circle cx="43" cy="43" r="43" stroke="none"/>
+        <circle cx="43" cy="43" r="40.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

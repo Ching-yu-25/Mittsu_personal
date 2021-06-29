@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="86" viewBox="0 0 86 86">
+  <defs>
+    <clipPath id="clip-phone-line">
+      <rect width="86" height="86"/>
+    </clipPath>
+  </defs>
+  <g id="phone-line" clip-path="url(#clip-phone-line)">
+    <g id="Group_36" data-name="Group 36" transform="translate(-1130 -1509.038)">
+      <path id="phone-alt-solid" d="M38.971,28.353,30.2,24.592A1.88,1.88,0,0,0,28,25.133l-3.886,4.748A29.042,29.042,0,0,1,10.233,16l4.748-3.886a1.876,1.876,0,0,0,.541-2.194L11.76,1.143A1.893,1.893,0,0,0,9.606.054L1.457,1.934A1.88,1.88,0,0,0,0,3.767,36.351,36.351,0,0,0,36.355,40.122a1.88,1.88,0,0,0,1.833-1.457l1.88-8.149a1.9,1.9,0,0,0-1.1-2.162Z" transform="translate(1152.5 1531.494)" fill="none" stroke="#1e1e44" stroke-width="4"/>
+      <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1130 1509)" fill="none" stroke="#1e1e44" stroke-width="5">
+        <circle cx="43" cy="43" r="43" stroke="none"/>
+        <circle cx="43" cy="43" r="40.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

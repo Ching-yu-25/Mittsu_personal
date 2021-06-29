@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -42,7 +43,7 @@
         <img src="images/flower1.png" class="img-fluid" alt="">
       </div>
       <div class="bn-row">
-        <div class="swiper-container mySwiper">
+        <div class="swiper-container indexSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="images/index_bn1.png" alt="" class="img-fluid">
@@ -53,10 +54,10 @@
           </div>
 
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="index-swiper-pagination"></div>
         <div class="shop-name"><img src="images/logo-w.svg" class="img-fluid" alt=""></div>
       </div>
-      <div class="text-center desc">
+      <div class="text-center desc" data-aos="fade-in">
         一品生活、二品期待<br>
         三品幸福<br>
         於生活中發現那些<br>
@@ -75,7 +76,7 @@
     </div>
     <div class="main">
       <div class="intro-row d-flex">
-        <div class="intro-txt">
+        <div class="intro-txt" data-aos="fade-right">
           <div class="tit">
             <h2 class="en">SWEETS</h2>
             <hr>
@@ -86,7 +87,7 @@
             來分甜點犒賞自己。</p>
           <a href="" class="mainbtn"><span>更多甜品</span></a>
         </div>
-        <div class="pic-wrapper">
+        <div class="pic-wrapper" data-aos="fade-left">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1047" height="784"
             viewBox="0 0 1047 784">
             <defs>
@@ -118,7 +119,7 @@
   <section class="wrapper" id="drinks">
     <div class="main">
       <div class="intro-row d-flex">
-        <div class="pic-wrapper d-flex">
+        <div class="pic-wrapper d-flex" data-aos="fade-right">
           <div class="intro-txt">
             <div class="tit">
               <h2 class="en">DRINKS</h2>
@@ -151,7 +152,7 @@
           </div>
 
         </div>
-        <div class="txt-wrapper">
+        <div class="txt-wrapper" data-aos="fade-right" data-aos-delay="200">
           <p class="line-height-2x my-4">細細品茗每一杯，<br>
             茶香與花香。<br>
             <br>
@@ -170,7 +171,7 @@
     <div class="flower3">
       <img src="images/flower4.png" alt="" class="img-fluid">
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="col-md-5">
           <div class="shop-name">
@@ -221,16 +222,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/custom.js"> </script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      autoplay: true,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
+  <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js">
   </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/custom.js"> </script>
 </body>
 
 </html>

@@ -88,13 +88,22 @@ aside {
 @media screen and (max-width: 767px) {
   aside {
     width: 100%;
-    height: 100%;
+    height: 63px;
     top: 0;
     left: 0;
     -webkit-transform: none;
             transform: none;
     background: #1E1E44;
     padding: 15px 15px 10px;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+    overflow: hidden;
+  }
+  aside.active {
+    height: 100%;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+    overflow: unset;
   }
 }
 
@@ -193,6 +202,7 @@ aside .logo {
   aside .logo {
     width: calc(100% - 40px);
     margin-bottom: 0;
+    padding-left: 40px;
   }
 }
 
@@ -325,7 +335,7 @@ footer .sns a:hover i {
   width: 20%;
   height: 150%;
   background: -webkit-gradient(linear, right top, left top, from(white), to(transparent));
-  background: linear-gradient(right, white, transparent);
+  background: linear-gradient(to left, white, transparent);
   -webkit-transition: all .5s;
   transition: all .5s;
 }
@@ -345,6 +355,10 @@ footer .sns a:hover i {
 
 .line-height-2x {
   line-height: 2;
+}
+
+.pink-pure {
+  background: #F0AEB8;
 }
 
 .pink-bg {
@@ -367,7 +381,8 @@ footer .sns a:hover i {
 }
 
 .pro-bg .main,
-.page-bg .main {
+.page-bg .main,
+.intro-bg .main {
   padding: 8% 0;
 }
 
@@ -827,11 +842,20 @@ h2.tit span {
   z-index: 1;
 }
 
+.news-item:hover > div {
+  -webkit-transform: translate(10px, 10px);
+          transform: translate(10px, 10px);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 .news-item > div {
   position: relative;
   z-index: 2;
   padding: 1rem;
   background: white;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .news-item .pic {
@@ -856,5 +880,91 @@ h2.tit span {
   margin: 1rem 0;
   font-size: 1.25rem;
   font-style: italic;
+}
+
+.contact-info {
+  padding: 1.5rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-info li {
+  width: calc(100% / 3);
+  border-right: 1px solid #1E1E44;
+}
+
+.contact-info li:last-child {
+  border-right: none;
+}
+
+.contact-info .subtit {
+  margin: .5rem auto;
+  font-style: italic;
+}
+
+.main-intro {
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-intro::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: -2rem;
+  top: 10%;
+  z-index: -1;
+  background-color: #FCD88C;
+}
+
+.main-intro .right {
+  width: 33%;
+}
+
+.main-intro .left {
+  width: 65%;
+  padding-left: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-intro .txt {
+  min-height: 150px;
+}
+
+.main-intro .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-intro .sns a {
+  width: 25%;
+  text-align: center;
+  color: #1E1E44;
+}
+
+.main-intro .sns a i {
+  font-size: 3.5rem;
+  color: #1E1E44;
+}
+
+.test {
+  border: 1px solid red;
 }
 /*# sourceMappingURL=main.css.map */
