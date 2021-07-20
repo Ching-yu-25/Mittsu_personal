@@ -523,6 +523,16 @@ h2.tit span {
   content: none;
 }
 
+.modal .modal-header {
+  background: #1E1E44;
+  color: white;
+}
+
+.modal .btn-close {
+  -webkit-filter: invert(1) grayscale(100%) brightness(200%);
+          filter: invert(1) grayscale(100%) brightness(200%);
+}
+
 .intro-row h2 {
   font-size: 4rem;
   letter-spacing: 5px;

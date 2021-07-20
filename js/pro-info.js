@@ -1,0 +1,71 @@
+const allProduct = [{
+  name: '水果巧克力',
+  price: '50',
+  type: '1',
+  info: '當季水果加上入口即融的牛奶巧克力，大人小孩都喜歡的基本口味！',
+}, {
+  name: '杏仁拿鐵',
+  price: '60',
+  type: '1',
+  info: '',
+}, {
+  name: '莓果奶香',
+  price: '50',
+  type: '1',
+  info: '',
+}, {
+  name: '遇上馬卡龍',
+  price: '40',
+  type: '1',
+  info: '',
+}, {
+  name: '聖誕限定',
+  price: '60',
+  type: '1',
+  info: '',
+}, {
+  name: '莓事吧',
+  price: '50',
+  type: '2',
+  info: '',
+}, {
+  name: '檸檬伴蛋糕',
+  price: '45',
+  type: '2',
+  info: '',
+}, {
+  name: '摩多布朗尼',
+  price: '55',
+  type: '2',
+  info: '',
+}, {
+  name: '眠眠雪莓',
+  price: '45',
+  type: '2',
+  info: '',
+}, {
+  name: '格格千層',
+  price: '60',
+  type: '2',
+  info: '',
+}, {
+  name: '莓果派對',
+  price: '50',
+  type: '3',
+  info: '',
+}, {
+  name: '三個願望',
+  price: '45',
+  type: '3',
+  info: '',
+}, {
+  name: '一口滋味',
+  price: '30',
+  type: '3',
+  info: '',
+}, {
+  name: '派系經典',
+  price: '50',
+  type: '3',
+  info: '',
+}, ];
