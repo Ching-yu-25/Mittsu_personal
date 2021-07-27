@@ -49,27 +49,32 @@
       <div class="produst-row" data-aos="fade-left">
         <div class="swiper-container pro-slide">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url(images/drinks-1.png);">
+            <div class="swiper-slide" data-pid="15" data-bs-toggle="modal" data-bs-target="#proModal"
+              style="background-image: url(images/drinks-1.png);">
               <div class="pro-cover">
                 <span class="pro-name">清新檸檬</span>
               </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(images/drinks-2.png);">
+            <div class="swiper-slide" data-pid="16" data-bs-toggle="modal" data-bs-target="#proModal"
+              style="background-image: url(images/drinks-2.png);">
               <div class="pro-cover">
                 <span class="pro-name">遇上小太陽</span>
               </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(images/drinks-3.png);">
+            <div class="swiper-slide" data-pid="17" data-bs-toggle="modal" data-bs-target="#proModal"
+              style="background-image: url(images/drinks-3.png);">
               <div class="pro-cover">
                 <span class="pro-name">錫蘭國寶</span>
               </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(images/drinks-4.png);">
+            <div class="swiper-slide" data-pid="18" data-bs-toggle="modal" data-bs-target="#proModal"
+              style="background-image: url(images/drinks-4.png);">
               <div class="pro-cover">
                 <span class="pro-name">花果養生</span>
               </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(images/drinks-5.png);">
+            <div class="swiper-slide" data-pid="19" data-bs-toggle="modal" data-bs-target="#proModal"
+              style="background-image: url(images/drinks-5.png);">
               <div class="pro-cover">
                 <span class="pro-name">熱情粉粉水果</span>
               </div>
@@ -82,24 +87,28 @@
 
         <div class="swiper-container pro-slide d-none">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url(images/drinks-6.png);">
-              <div class="pro-cover">
-                <span class="pro-name">悠閒英式奶茶</span>
-              </div>
-            </div>
-            <div class="swiper-slide" style="background-image: url(images/drinks-7.png);">
-              <div class="pro-cover">
-                <span class="pro-name">拿鐵重奶香</span>
-              </div>
-            </div>
-            <div class="swiper-slide" style="background-image: url(images/drinks-8.png);">
+            <div class="swiper-slide" data-pid="20" data-bs-toggle="modal" data-bs-target="#proModal"
+              style="background-image: url(images/drinks-6.png);">
               <div class="pro-cover">
                 <span class="pro-name">純粹黑咖啡</span>
               </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(images/drinks-9.png);">
+            <div class="swiper-slide" data-pid="21" data-bs-toggle="modal" data-bs-target="#proModal"
+              style="background-image: url(images/drinks-7.png);">
+              <div class="pro-cover">
+                <span class="pro-name">拿鐵重奶香</span>
+              </div>
+            </div>
+            <div class="swiper-slide" data-pid="22" data-bs-toggle="modal" data-bs-target="#proModal"
+              style="background-image: url(images/drinks-8.png);">
               <div class="pro-cover">
                 <span class="pro-name">卡加卡布奇諾</span>
+              </div>
+            </div>
+            <div class="swiper-slide" data-pid="23" data-bs-toggle="modal" data-bs-target="#proModal"
+              style="background-image: url(images/drinks-9.png);">
+              <div class="pro-cover">
+                <span class="pro-name">悠閒英式奶茶</span>
               </div>
             </div>
           </div>
@@ -110,6 +119,31 @@
       </div>
     </div>
   </section>
+
+  <!-- modal -->
+  <div class="modal fade" id="proModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="proModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proModalLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex">
+            <div class="left">
+              <img src="" alt="" class="img-fluid">
+            </div>
+            <div class="right">
+              <div class="pro-tit"></div>
+              <div class="price-row">NT$ <span class="price"></span></div>
+              <p class="pro-info"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- 頁尾 -->
@@ -139,6 +173,7 @@
   </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/pro-info.js"></script>
   <script src="js/custom.js"> </script>
 
 </body>
