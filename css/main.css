@@ -608,9 +608,11 @@ h2.tit span {
 
 #top .bn-row {
   margin-top: 5%;
+  position: relative;
 }
 
 #top .index-swiper-pagination {
+  left: unset;
   right: 0;
   width: 50%;
   text-align: right;
